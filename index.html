@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>足球体育</title>
+    <link rel="stylesheet" href="css/666.css">
+</head>
+<body>
+    <header>     
+    	<div class="toubu">
+    		<div id="Tlogo"><img src="img/标志.png"height="70px"width="100px" /></div>
+    		</div>
+
+        <nav class="nav_main">
+            <div id="banner"></div>
+            <div id="nav_menu">
+                <a href="#">主页</a>               
+                <a href="#">直播</a>
+                <a href="#">奥运</a>
+                <a href="#">中超</a>
+                <a href="#">法甲</a>
+                <a href="#">西甲</a>
+                <a href="#">意甲</a>
+                <a href="#">英超</a>
+                <a href="#">欧洲杯</a>
+                <a href="#">世界杯</a>
+            </div>
+        </nav>
+    </header>
+                         <!-- 页面大图 -->
+        <script language="javascript" type="text/javascript">    /* js控制轮播图 */
+            var _t1 = 0;           //打开页面时等待图片载入时间，单位为秒，可设置为0
+            var _t2 = 5;           //图片轮播的时间间隔
+            var _tnum = 3;         //轮播图的个数
+            var _tn = 1;           //当前所在图片位置
+            var _t1 = null;
+            _tt1 = setTimeout('change_img()',_t1*1000);
+            function change_img(){
+                 setFocus(_tn);
+                _tt1 = setTimeout('change_img()',_t2*1000);
+                }
+
+            function setFocus(i){
+                if(i>_tnum){_tn=1;i=1}
+                _t1?document.getElementById('focusPic'+_t1).style.display='none':'';
+                document.getElementById('focusPic'+i).style.display='block';
+                _t1=i;
+                _tn++;
+                }
+        </script>
+        <div id="focusPic1">
+            <a href="https://ssports.iqiyi.com/play/54477409/0"  target="_blank">
+                <img src="img/英格兰.jpg" width="1200px" height="450px">
+            </a>
+            <h2>D17前瞻：英德大战今夜上演</h2>
+        </div> 
+        <!-- 轮播图1结束，轮播图2开始 -->
+        <div id="focusPic2" style="display: none;">
+            <a href="https://ssports.iqiyi.com/play/54477355/0"  target="_blank">
+                <img src="img/黑马.jpg" width="1200px" height="450px">
+            </a>
+            <h2>瑞典乌克兰谁能再现奇迹</h2>
+        </div>
+        <!-- 轮播图2结束，轮播图3开始 -->
+        <div id="focusPic3" style="display: none;">
+            <a href="https://ssports.iqiyi.com/play/54483370/0"  target="_blank">
+                <img src="img/欧洲杯.jpg" width="1200px" height="450px">
+            </a>
+            <h2>决战欧洲杯</h2>
+        </div>
+    </nav>
+    </section>
+ 
+        <script>
+            function setTab(name, cursel, n) {
+                for (i = 1; i <= n; i++) {
+                    var menu = document.getElementById(name + i);
+                    var con = document.getElementById("con_" + name + "_" + i);
+                    menu.className = i == cursel ? "hover" : "";
+                    con.style.display = i == cursel ? "block" : "none";
+                }
+            }
+        </script>
+        <center>
+        <div id="Tab">
+            <div id="Menubox">
+                <ul>
+                    <li id="menu1" onMouseOver="setTab('menu',1,2)" class="hover">热门推荐</li>
+                    <li id="menu2" onMouseOver="setTab('menu',2,2)">换一换</li>
+                </ul>
+            </div>
+            <div id="Contentbox">
+                <div id="con_menu_1" class="hover">
+                    <ul>
+                        <li><a href="#">只不过是卷土重来！本泽马：未来我们会更强大的回来</li>
+                        <li><a href="#">真苦主！日耳曼战车在温布利对阵三狮已保持7场不败</a></li>
+                        <li><a href="#">11年前门线冤案让一代人心碎！英格兰迎复仇良机</a></li>
+                        <li><a href="#">别奶？欧文预测英德大战：英格兰晋级并零封德国</a></li>
+                        <li><a href="#">“可乐”的复仇！外媒恶搞C罗出局</a></li>
+                        <li><a href="#">岁月不饶人！匈主帅称C罗是冠军球员 但状态不比从前</a></li>
+                        <li><a href="#">【凯恩：不担心自己的进球荒 赢球才是最重要的事</a></li>
+                    </ul>
+                </div>
+                <div id="con_menu_2" style="display:none">
+                    <ul>
+                        <li><a href="#"</a>那你可以给我上个舰长吗</li>
+                        <li><a href="#">【RAPEX系列】自 动 瞄 准 根 本 就 是 天 方 夜 谭</a></li>
+                        <li><a href="#">4个动作虐腹｜5分钟深夜健身，带拉伸</a></li>
+                        <li><a href="#">奎爷堂弟！冥界王子与他老爹不得不说的那点事</a></li>
+                        <li><a href="#">起风了/催泪向---致拉莫斯•16年白衣生涯丨我终将青春还给了他</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </center>
+    <div class="clear"></div>              <!-- 主要内容 -->
+    <section id="main-ts">
+        <div class="content fleft">
+            <h1>
+                <span class="title fleft">西甲联赛</span>
+                <div class="clear"></div>
+            </h1>
+            <div class="c-box">
+                <div class="left fleft">
+                    <img src="img/西甲logo.jpg" width="450px"height="600px">
+                </div>
+                <ul class="right fright" style="display: block;">
+                   <li>
+                       <a href="https://www.bilibili.com/video/BV1rA41187ri?from=search&seid=17140382978406624450" target="_black">
+                        <img src="img/MSN.webp" class="fleft">
+                        <div class="txt fleft">
+                            <h3>官方：</h3>
+                            <h4>  </h4>
+                            <h5>西甲新赛季赛程抽签明晚23:30进行</h5>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                   </li>
+                   <li>
+                    <a href="https://www.bilibili.com/video/BV1hf4y1Y7DK?from=search&seid=14788971092335958221" target="_black">
+                     <img src="img/马竞.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>马竞</h3>
+                         <h4>  </h4>
+                         <h5>2020/21赛季西甲冠军马德里竞技67粒进球全记录</h5>
+                     </div>
+
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV164411L7Wu?from=search&seid=14788971092335958221" target="_black">
+                     <img src="img/武磊.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>武磊</h3>
+                         <h4>  </h4>
+                         <h5>这才是集锦（一） 加泰罗尼亚球王西甲首赛季</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV1fp4y1a7mT?from=search&seid=17486461899858691039" target="_black">
+                     <img src="img/-.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>集锦</h3>
+                         <h4>  </h4>
+                         <h5>足坛真神TOP：你可曾见过我的巅峰全盛</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV16U4y1s7Qp?from=search&seid=7038755931203892199" target="_black">
+                     <img src="img/梅西.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>梅西</h3>
+                         <h4>  </h4>
+                         <h5>努力改变命运！纪录片《谁是梅西》，看奇迹男孩如何逆天改命？</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<br />
+    <section id="main-ts">                       <!-- 重复 -->
+        <div class="content fleft">
+            <h1>
+                <span class="title fleft">英超联赛</span>
+                <div class="clear"></div>
+            </h1>
+            <div class="c-box">
+                <div class="left fleft">
+                    <img src="img/英超logo.jpeg" width="450px"height="600px">
+                </div>
+                <ul class="right fright" style="display: block;">
+                   <li>
+                       <a href="https://www.bilibili.com/video/BV1U4411Z7Vg?from=search&seid=17727548076088080674" target="_black">
+                        <img src="img/曼城.jpg" class="fleft">
+                        <div class="txt fleft">
+                            <h3>曼城</h3>
+                            <h4>  </h4>
+                            <h5>【中字】四集全 | 曼城18/19赛季纪录片</h5>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                   </li>
+                   <li>
+                    <a href="https://www.bilibili.com/video/BV1xW411V7Jg?from=search&seid=9709833430274873434" target="_black">
+                     <img src="img/曼联.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>曼联</h3>
+                         <h4>  </h4>
+                         <h5>【每日一球】贝克汉姆曼联经典成名球。</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV1vU4y1V7hm?from=search&seid=11604207716461944328" target="_black">
+                     <img src="img/英超集锦.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>集锦</h3>
+                         <h4>  </h4>
+                         <h5>英！超！神！仙！球！【历届英超赛季最佳进球】</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV1aK4y1G7cY?from=search&seid=3015348423598363257" target="_black">
+                     <img src="img/球王.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>球王</h3>
+                         <h4>  </h4>
+                         <h5>林加德——人类不该存在的10大进球</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/video/BV1354y1S7LM?from=search&seid=11604207716461944328" target="_black">
+                     <img src="img/利物浦.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>夺冠</h3>
+                         <h4>  </h4>
+                         <h5>重返欧洲之巅！再次回顾利物浦收获第六座欧冠奖杯全过程</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<br />
+    <section id="main-ts">
+        <div class="content fleft">                        <!-- 第三次重复 -->
+            <h1>
+                <span class="title fleft">意甲联赛</span>
+                <div class="clear"></div>
+            </h1>
+            <div class="c-box">
+                <div class="left fleft">
+                    <img src="img/意甲logo.jpeg" width="450px"height="600px">
+                </div>
+                <ul class="right fright" style="display: block;">
+                   <li>
+                       <a href="" target="_black">
+                        <img src="img/尤文.jpg" class="fleft">
+                        <div class="txt fleft">
+                            <h3>尤文</h3>
+                            <h4>  </h4>
+                            <h5>【长篇专题《百年豪门》第四集“斑马军团”尤文图斯】</h5>
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                   </li>
+                   <li>
+                    <a href="" target="_black">
+                     <img src="img/莱万.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>莱万</h3>
+                         <h4>  </h4>
+                         <h5>2020足坛新王诞生！莱万封神之路特别企划《九五至尊》</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="" target="_black">
+                     <img src="img/魔人.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>魔人</h3>
+                         <h4>  </h4>
+                         <h5>评选本周十大进球：魔人布欧哈兰德，法国巨炮博格巴</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="" target="_black">
+                     <img src="img/意甲集锦.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>集锦</h3>
+                         <h4>  </h4>
+                         <h5>集锦 | 特奥赛季混剪—他能成为意甲最好的左边卫吗！</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                <li>
+                    <a href="" target="_black">
+                     <img src="img/C罗.jpg" class="fleft">
+                     <div class="txt fleft">
+                         <h3>C罗</h3>
+                         <h4>  </h4>
+                         <h5>【珍藏】C罗尤文生涯百球全回顾 三赛季达成里程碑队</h5>
+                     </div>
+                     <div class="clear"></div>
+                 </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        <div class="footer">
+        	<div id="dibu">
+                    <a href="https://www.bilibili.com/"target="_black"><h3>bilbil</h3></a>
+                    <ul >
+                        <li><a >关于我们</a></li>
+                        <li><a >联系我们</a></li>
+                        <li><a >用户协议</a></li>
+                        <li><a >加入我们</a></li>
+                    </ul>
+        	</div>
+    </div>
+</body>
+</html>

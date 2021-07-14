@@ -1,0 +1,263 @@
+/* 网站的全局样式的布置 */
+*{                        /* 消除默认值，解决网站兼容问题 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{                    /* 设置网页默认背景且居中 */
+    background-color: white; /* 设置渐变色的背景 */
+    min-width: 1525px;
+    text-align: center;
+}
+
+
+img{
+    border: 0px;
+   line-height: 0px;
+}
+
+em,b,i{
+    font-style: normal;
+    font-weight: 400;
+}
+
+dl,ul,li{
+    font-size: 100%;
+    font-weight: 500;
+}
+a,a:hover{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4ac29a;
+    text-decoration: none;
+}
+
+.fleft{                      /* 类选择器定义容器浮动 */
+    float: left;
+}
+
+.fright{                     
+    float: right;
+}
+
+.clear{                     /* 消除容器浮动 */
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.overflow{
+    overflow: hidden;
+}
+        .toubu {
+            width: 100%;
+            height: 80px;
+            background: black;
+        }
+#nav_menu{
+    width:100%;
+    margin: 0px auto;
+    height: 40px;
+    border: 1px solid powderblue;
+    border-bottom: 2px solid #00BFFF;
+}
+
+#nav_menu a{
+    display: block;
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    border-bottom: 3px solid #78C2C4;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+#nav_menu a:hover{
+    border-bottom: 4px solid deepskyblue;
+}
+    background: #B0E0E6;
+    width: 120px;
+    padding: 1px;
+    float: left;
+}
+
+
+h2{
+    text-align: center;
+}
+
+#focusPic1{
+    margin-top: 10px;
+}
+
+#focusPic2{
+    margin-top: 10px;
+}
+
+#focusPic3{
+    margin-top: 10px;
+}
+/* 滑动tab样式开始 */
+#Tab {
+    margin: 10px 0px;
+    width: 800px;
+    height: 280px;
+    border: 1px solid #B0E0E6;
+}
+
+#Menubox {
+    height: 45px;
+    border-bottom: 1px solid #00BFFF;
+    background: mediumturquoise;
+}
+
+#Menubox ul {
+    list-style: none;
+    margin: 7px 10px;
+    padding: 0;
+    position: absolute;
+}
+
+#Menubox ul li {
+    float: left;
+    background: darkblue;
+    line-height: 35px;
+    display: block;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    color: #8ddff3;
+    font-weight: bold;
+    border-top: 1px solid #78c2c4;
+    border-left: 1px solid #78c2c4;
+    border-right: 1px solid #78c2c4;
+}
+
+#Menubox ul li.hover {
+    background: #69e9d1;
+    border-bottom: 1px solid #bdfff3;
+    color: #056369;
+}
+
+#Contentbox {
+    clear: both;
+    margin-top: 0px;
+    border-top: none;
+    height: 181px;
+    padding-top: 8px;
+    height: 100%;
+    font-size: 14px;
+}
+
+#Contentbox ul {
+    margin: 5px;
+    padding: 0;
+}
+
+#Contentbox ul li {
+    line-height: 24px;
+    text-align: left;
+    border-bottom: 1px solid #B0E0E6;
+    margin-left: 15px;
+}
+
+/* 主题板块 */
+#main-ts{
+    width: 1200px;
+    overflow: hidden;
+    height: 755px;
+    overflow: hidden;
+    border: 1px solid #87CEEB;
+    margin: 10px auto;
+}
+
+#main-ts .content{
+    width: 1200px;
+}
+
+#main-ts .content h1{
+    height: 45px;
+}
+
+
+#main-ts .content .c-box{
+    width: 1200px;
+    height: auto;
+}
+
+#main-ts .content .c-box .left{
+    width: 120px;
+    height: 400px;
+}
+
+#main-ts .content .c-box .right{
+    width: 700px;
+    height: 506px;
+    padding-right: 20px;
+}
+
+#main-ts .content .c-box .right li{
+    padding: 18px 0;
+    height: 105px;
+    border-bottom: 2px dashed white;
+}
+
+#main-ts .content .c-box .right li:last-child{
+    border: none;
+}
+
+#main-ts .content .c-box .right li a{
+    display: block;
+    height: 90px;
+    width: 750px;
+    color: white;
+}
+
+#main-ts .content .c-box .right li a img{
+    width: 200px;
+    height: 110px;
+}
+
+#main-ts .content .c-box .right li a div.txt{
+    height: 70px;
+    width: 380px;
+    padding: 0 20px;
+}
+
+#main-ts .content .c-box .right li a div.txt h3{
+    font-size: 18px;
+    height: 27px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #4f4f4f;
+    font-weight: 600px;
+}
+
+#main-ts .content .c-box .right li a div.txt h4{
+    line-height: 50px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#main-ts .content .c-box .right li a div.txt h5{
+    font-size: 16px;
+    color: #405b55;
+}
+#dibu{color: silver}
+        .footer {
+            background:black;
+            width: 100%;
+            height: 120px;
+        }
+
+
