@@ -127,7 +127,7 @@
     font-size: 18px;
     line-height: 36px;
     align-self: center;
-    padding-left: 100px;
+    padding-left: 70px;
 }
 
 .introduce_item_titles {
@@ -135,9 +135,8 @@
     font-size: 18px;
     line-height: 36px;
     align-self: center;
-    padding-right: 100px;
+    padding-right: 70px;
 }
-
 audio {
     position: fixed;
     bottom: 50px;
