@@ -162,3 +162,23 @@ audio {
         opacity: .8;
     }
 }
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icons_items {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 80px;
+    width: 200px;
+}
+
+.icons_items_imgs {
+    width: 200px;
+    margin-bottom: 30px;
+}
