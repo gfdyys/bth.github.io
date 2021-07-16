@@ -165,8 +165,7 @@ audio {
 .icons {
     display: flex;
     justify-content: space-between;
-    padding: 0 450px;
-    margin-right: 300px;
+    padding: 0 500px;
     box-sizing: border-box;
     overflow: hidden;
 }
