@@ -8,6 +8,7 @@
 
 
 body{                    /* 设置网页默认背景且居中 */
+    background-color: white; /* 设置渐变色的背景 */
     min-width: 1525px;
     text-align: center;
 }
@@ -53,10 +54,32 @@ a:hover{
     font-size: 0;
     line-height: 0;
 }
+* {
+    margin: 0;
+    padding: 0
+}
+
 .home {
     height: 100%;
     overflow: hidden;
 }
+
+.content {
+    perspective: 340px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
 .stars {
     position: absolute;
     top: 30%;
@@ -95,47 +118,6 @@ a:hover{
     to {
         transform: translateZ(200px);
         opacity: 0.8;
-    }
-}
-
-
-.title {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    top: 300px;
-    margin: auto;
-    bottom: 0;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.titles {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    top: 350px;
-    margin: auto;
-    bottom: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-@keyframes downs {
-    from {
-        transform: translatey(0px);
-        opacity: .6;
-    }
-    to {
-        transform: translatey(30px);
-        opacity: .8;
     }
 }
 
@@ -191,11 +173,34 @@ a:hover{
     transition: background-color 0.2s, margin-top 0.2s;
 }
 
-
-
-
-
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 300px;
+    margin: auto;
+    bottom: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
 }
+
+.titles {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 350px;
+    margin: auto;
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 
 .introduce {
     display: flex;
@@ -218,7 +223,7 @@ a:hover{
     font-size: 18px;
     line-height: 36px;
     align-self: center;
-    padding-left: 70px;
+    padding-left: 100px;
 }
 
 .introduce_item_titles {
@@ -226,8 +231,9 @@ a:hover{
     font-size: 18px;
     line-height: 36px;
     align-self: center;
-    padding-right: 70px;
+    padding-right: 100px;
 }
+
 audio {
     position: fixed;
     bottom: 50px;
@@ -253,6 +259,7 @@ audio {
         opacity: .8;
     }
 }
+
 .icons {
     display: flex;
     justify-content: space-between;
@@ -273,3 +280,4 @@ audio {
     width: 200px;
     margin-bottom: 30px;
 }
+
