@@ -4,6 +4,62 @@
 		<meta charset="utf-8" />
 		<title>下雪</title>
 		<style type="text/css">
+			/* 网站的全局样式的布置 */
+*{                        /* 消除默认值，解决网站兼容问题 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{                    /* 设置网页默认背景且居中 */
+    background-color: white; /* 设置渐变色的背景 */
+    min-width: 1525px;
+    text-align: center;
+}
+
+
+img{
+    border: 0px;
+   line-height: 0px;
+}
+
+em,b,i{
+    font-style: normal;
+    font-weight: 400;
+}
+
+dl,ul,li{
+    font-size: 100%;
+    font-weight: 500;
+}
+a,a:hover{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4ac29a;
+    text-decoration: none;
+}
+
+.fleft{                      /* 类选择器定义容器浮动 */
+    float: left;
+}
+
+.fright{                     
+    float: right;
+}
+
+.clear{                     /* 消除容器浮动 */
+    clear: both;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
 			.xue{
 				position: absolute;
 				background: url(img/xue.png);
